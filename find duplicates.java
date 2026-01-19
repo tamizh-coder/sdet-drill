@@ -1,3 +1,4 @@
+//Approach: Using HashSet
 import java.util.*;
 
 public class DuplicateFinder {
@@ -17,5 +18,24 @@ public class DuplicateFinder {
     public static void main(String[] args) {
         int[] input = {1, 2, 3, 2, 4, 5, 1};
         System.out.println(findDuplicates(input)); // Output: [1, 2]
+    }
+}
+
+
+// SDET Special: Java Streams (Modern Way)
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> list = Arrays.asList(1, 2, 3, 2, 4, 5, 1);
+        
+        Set<Integer> items = new HashSet<>();
+        List<Integer> duplicates = list.stream()
+                .filter(n -> !items.add(n)) // add panna mudiyadhappo filter aagum
+                .distinct()                // oru duplicate-ah oru vaati thaan kaatanum
+                .collect(Collectors.toList());
+
+        System.out.println(duplicates); // Output: [2, 1]
     }
 }
