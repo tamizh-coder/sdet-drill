@@ -24,7 +24,7 @@ public class DuplicateFinder {
 
 // SDET Special: Java Streams (Modern Way)
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.stream.Collectors; 
 
 public class Main {
     public static void main(String[] args) {
