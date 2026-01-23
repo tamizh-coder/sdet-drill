@@ -44,3 +44,7 @@ if original == reverse:
     print("Palindrome")
 else:
     print("Not a Palindrome")
+
+
+text = input("Enter text: ")
+print("Palindrome" if text == text[::-1] else "Not a Palindrome")
