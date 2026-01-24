@@ -38,7 +38,7 @@ public class numPalindrome {
 
         if (original == reverse)
             System.out.println("Palindrome");
-        else
+        else 
             System.out.println("Not a Palindrome");
     }
 }
