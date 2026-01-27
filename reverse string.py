@@ -8,6 +8,13 @@ print(reverse_string(""))      # ""
 print(reverse_string("a"))     # "a"
 print(reverse_string("hello")) # "olleh"
 
+#with user intraction
+def reverse_string(s):
+    
+    return s[::-1]
+s= str(input("Enter the string need to reverse:"))
+revstr=reverse_string(s)
+print(revstr)
 
 
 Approach 2: Manual Loop
