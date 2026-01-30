@@ -1,4 +1,4 @@
-#
+#Given an array of numbers and a target, return indices of two numbers that add up to the target.
 def two_sum(nums, target):
     seen = {}
 
