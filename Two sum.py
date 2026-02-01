@@ -8,7 +8,7 @@ def two_sum(nums, target):
             return [seen[required], i]
         seen[num] = i
 
-    return []
+    return [] 
 
 if __name__ == "__main__":
     # User input
