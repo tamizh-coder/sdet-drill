@@ -3,7 +3,7 @@
 function isValid(s) {
     const stack = [];
     const map = {
-        ')': '(',
+        ')': '(', 
         '}': '{',
         ']': '['
     };
