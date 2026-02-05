@@ -6,7 +6,7 @@ function isValid(s) {
         ')': '(', 
         '}': '{',
         ']': '['
-    };
+    }; k
 
     for (const char of s) {
         // If closing bracket
