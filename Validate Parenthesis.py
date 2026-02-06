@@ -1,3 +1,4 @@
+# paranthesis validating
 def is_valid(s):
     stack = []
     mapping = {
