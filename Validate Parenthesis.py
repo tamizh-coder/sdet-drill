@@ -8,7 +8,7 @@ def is_valid(s):
     }
 
     for char in s:
-        # If closing bracket
+        # If closing bracket 
         if char in mapping:
             # Stack empty or mismatch
             if not stack or stack.pop() != mapping[char]:
