@@ -1,1 +1,136 @@
-# cosmo salon container
+/* cosmo salon container*/
+
+<style>
+/* Card container */
+.eyebrow-card {
+  max-width: 360px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Image */
+.eyebrow-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Content */
+.eyebrow-card-content {
+  padding: 18px;
+}
+
+.eyebrow-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.eyebrow-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Hidden text */
+.more-text {
+  display: none;
+}
+
+/* Read more */
+.read-more {
+  display: inline-block;
+  margin-top: 6px;
+  color: #dd3333;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.more-text.open {
+  display: block;
+  margin-top: 6px;
+}
+
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.eyebrow-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px 18px;
+}
+
+.time-price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Button */
+.select-btn {
+  background-color: #dd3333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.select-btn:hover {
+  opacity: 0.9;
+}
+</style>
+
+<div class="eyebrow-card">
+  <img src="https://www.cosmo21salon.com/wp-content/uploads/2025/11/mb2.png" alt="Eyebrow Ombre">
+
+  <div class="eyebrow-card-content">
+    <h3>EYEBROW OMBRE</h3>
+
+    <p>
+      Ombré Powder Brows, also known as Powdered Brows are a semi-permanent
+      eyebrow. Service is good for all skin types. Ombré Brows creates a soft shaded brow pencil look. 
+      <span class="more-text">
+      No more filling out your brows everyday! Procedure takes around 1,5-2 Hours to do & completely not painful due to anesthesia cream we use. Ombré Brows can be done in any shape & any color that we choose together during the procedure based on your face features & preference.Ombré Powder Brows last 3-4 years with proper aftercare & pre-care. Touch up is recommended in 4-6 weeks after the procedure to enhance the color.
+      </span>
+    </p>
+
+    <a href="#" class="read-more" onclick="toggleMore(this); return false;">Show more</a>
+
+  </div>
+
+  <div class="eyebrow-card-footer">
+    <div class="time-price">2 h 30 min | $550</div>
+    <button class="select-btn">Book Now</button>
+  </div>
+</div>
+
+<script>
+function toggleMore(el) {
+  const card = el.closest(".eyebrow-card");
+  const moreText = card.querySelector(".more-text");
+
+  if (moreText.classList.contains("open")) {
+    moreText.classList.remove("open");
+    el.textContent = "Show more";
+  } else {
+    moreText.classList.add("open");
+    el.textContent = "Show less";
+  }
+}
+</script>
+
+
+
+
