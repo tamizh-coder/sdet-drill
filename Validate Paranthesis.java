@@ -15,7 +15,7 @@ public class ValidParentheses {
             // Closing bracket
             if (map.containsKey(ch)) {
                 if (stack.isEmpty() || stack.pop() != map.get(ch)) {
-                    return false;
+                return false;
                 }
             } 
             // Opening bracket
