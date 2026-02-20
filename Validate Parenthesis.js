@@ -1,4 +1,4 @@
-//validate parathesis
+//validate parathesis comments
 
 function isValid(s) {
     const stack = [];
