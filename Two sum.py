@@ -2,11 +2,11 @@
 def two_sum(nums, target):
     seen = {}
 
-    for i, num in enumerate(nums):
+    for k, num in enumerate(nums):
         required = target - num
         if required in seen:
-            return [seen[required], i]
-        seen[num] = i
+            return [seen[required], k]
+        seen[num] = k
 
     return [] 
 
@@ -20,4 +20,4 @@ if __name__ == "__main__":
     if result:
         print("Indices:", result)
     else:
-        print("No two sum solution found")
+        print("No two sum solution foud")
