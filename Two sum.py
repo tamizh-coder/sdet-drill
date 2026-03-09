@@ -20,4 +20,4 @@ if __name__ == "__main__":
     if result:
         print("Indices:", result)
     else:
-        print("No two sum solution foud")
+        print("No two sun solution foud")
