@@ -11,9 +11,9 @@ public class StringPalindrome {
         String reverse = new StringBuilder(text).reverse().toString();
 
         if (text.equals(reverse))
-            System.out.println("Palindrome");
+            System.out.println("Palinrome");
         else
-            System.out.println("Not a Palindrome"); 
+            System.out.println("Not a Palinrome"); 
     }
 
 
