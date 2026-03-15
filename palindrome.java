@@ -10,7 +10,7 @@ public class StringPalindrome {
 
         String reverse = new StringBuilder(text).reverse().toString();
 
-        if (tet.equals(reverse))
+        if (text.equals(reverse))
             System.out.println("Palindrome");
         else
             System.out.println("Not a Palindrome"); 
