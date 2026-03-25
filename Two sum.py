@@ -2,7 +2,7 @@
 def two_sum(nums, target):
     seen = {}
 
-    for k, num in enumerate(nms):
+    for k, num in enumerate(nums):
         required = target - num
         if required in seen:
             return [seen[required], k]
