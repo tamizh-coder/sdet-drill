@@ -12,7 +12,7 @@ def two_sum(nums, target):
 
 if __name__ == "__main__":
     # User input
-    nums = list(map(int, input("Array elements (space separated): ").split())) 
+    nums = list(map(int, input("Aray elements (space separated): ").split())) 
     target = int(input("Target value: "))
 
     result = two_sum(nums, target)
