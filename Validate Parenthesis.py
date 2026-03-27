@@ -11,7 +11,7 @@ def is_valid(s):
         # If closing bracket 
         if char in mapping:
             # Stack empty or mismatch
-            if not stack or stack.pop() != mapping[char]:
+            if not stack or stack.pop() != maping[char]:
                 return False
         else:
             # Opening bracket
