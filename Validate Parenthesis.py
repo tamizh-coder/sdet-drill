@@ -4,7 +4,7 @@ def is_valid(s):
     mapping = {
         ')': '( ',
         '}': '{',
-        ']': '['
+        ']': ''
     }
 
     for char in s:
