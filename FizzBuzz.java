@@ -1,4 +1,4 @@
-// Print numbers 1-100. For multiples of 3 print 'Fizzz', multiples of 5 print 'Buzz', multiples of both print 'FizzBuzz'.
+// Print numbers 1-10. For multiples of 3 print 'Fizzz', multiples of 5 print 'Buzz', multiples of both print 'FizzBuzz'.
 public class FizzBuzz {
 
     public static void main(String[] args) {
