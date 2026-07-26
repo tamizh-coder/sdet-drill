@@ -9,7 +9,7 @@ SDET preparation repository with hands-on automation code, coding drills, and in
 
 This repository is designed to help Software Development Engineers in Test (SDETs):
 
-Strengthen automation fundamentals
+Strengthening automation fundamentals
 
 Practice real-world test frameworks
 
